@@ -1,0 +1,175 @@
+@import '../mixins';
+@import '../_variables';
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: transparent;
+  }
+  
+  .VideoBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  
+    .video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+  }
+}
+
+
+  .Content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    @include goFlex(column, center, center, wrap);
+
+    header{
+        margin-bottom: 30px;
+        width: 600px;
+        font-size: 1.5rem;
+        nav{
+            @include goFlex(row, space-between, center, wrap);
+        }
+    }
+      .logo{
+        background-image: url(../../img/Rammstein-Logo.png);
+        background-color: wheat;
+        @include child-image(cover, center);
+        @include hwidth(900px, 480px);
+      }
+      main{
+        @include goFlex (row, space-around, center);
+        .Introduction{
+          @include goFlex (row, flex-end, center);
+          @include hwidth(400px, 200px);
+        } 
+        .Members{
+        @include goFlex (column, space-around, center, wrap);
+          @include hwidth(500px, 300px);
+          p{
+            span{
+              display: block;
+            }
+          }
+        }
+        .Formation{
+          @include hwidth(500px, 300px);
+        }
+        .Breakthrough{
+          @include hwidth(500px, 300px);
+        }
+      }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h2{
+      font-size:2rem;
+      margin: 1rem;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    h1, p, h2{
+        animation-name: colorChange;
+        animation-duration: 30s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background-clip: text;
+        color: transparent;
+      }
+      a{
+        animation-name: atagcolorChange;
+        animation-duration: 30s; 
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+    @keyframes colorChange {
+      0% {
+        background-color: #ca0207;
+background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+      }
+      16.67% {
+        background-color: #ca0207;
+background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+      }
+      33.33% {
+        background-color: #9802ca;
+background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+      }
+      50% {
+        background-color: #ca9b02;
+background-image: linear-gradient(90deg, #ca9b02 0%, #271a04 50%, #ca9b02 100%);
+      }
+      66.67% {
+        background-color: #0245ca;
+background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+      }
+      83.33% {
+        background-color: #ca0207;
+        background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+      }
+      100% {
+        background-color: #ca9b02;
+background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
+      }
+    }
+  span{
+    display: block;
+  }
+  @keyframes atagcolorChange {
+    0% {
+        background-color: #9802ca;
+        background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+    }
+    16.67% {
+        background-color: #ca9b02;
+        background-image: linear-gradient(90deg, #ca9b02 0%, #271a04 50%, #ca9b02 100%);
+    }
+    33.33% {
+        background-color: #0245ca;
+        background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+    }
+    50% {
+        background-color: #ca0207;
+      background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+    }
+    66.67% {
+        background-color: #ca9b02;
+        background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
+    }
+    83.33% {
+        background-color: #9802ca;
+        background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+    }
+    100% {
+        background-color: #0245ca;
+        background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+    }
+  }
+  

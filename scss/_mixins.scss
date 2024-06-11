@@ -1,0 +1,16 @@
+@mixin goFlex($dir: row, $justify: flex-start, $align: stretch, $wrap: wrap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+@mixin child-image($size: cover, $position: center) {
+    background-size: $size;
+    background-position: $position;
+    background-repeat: no-repeat;
+}
+@mixin hwidth($width: 300px, $height: inherit){
+    width: $width;
+    height: $height;
+}

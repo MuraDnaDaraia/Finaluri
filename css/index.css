@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: transparent;
+}
+
+.VideoBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.VideoBackground .video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Content header {
+  margin-bottom: 30px;
+  width: 600px;
+  font-size: 1.5rem;
+}
+.Content header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Content .logo {
+  background-image: url(../../img/Rammstein-Logo.png);
+  background-color: wheat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 480px;
+}
+.Content main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Content main .Introduction {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 200px;
+}
+.Content main .Members {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 300px;
+}
+.Content main .Members p span {
+  display: block;
+}
+.Content main .Formation {
+  width: 500px;
+  height: 300px;
+}
+.Content main .Breakthrough {
+  width: 500px;
+  height: 300px;
+}
+.Content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.Content h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+.Content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.Content h1, .Content p, .Content h2 {
+  animation-name: colorChange;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+.Content a {
+  animation-name: atagcolorChange;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #ca0207;
+    background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+  }
+  16.67% {
+    background-color: #ca0207;
+    background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+  }
+  33.33% {
+    background-color: #9802ca;
+    background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+  }
+  50% {
+    background-color: #ca9b02;
+    background-image: linear-gradient(90deg, #ca9b02 0%, #271a04 50%, #ca9b02 100%);
+  }
+  66.67% {
+    background-color: #0245ca;
+    background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+  }
+  83.33% {
+    background-color: #ca0207;
+    background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+  }
+  100% {
+    background-color: #ca9b02;
+    background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
+  }
+}
+span {
+  display: block;
+}
+
+@keyframes atagcolorChange {
+  0% {
+    background-color: #9802ca;
+    background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+  }
+  16.67% {
+    background-color: #ca9b02;
+    background-image: linear-gradient(90deg, #ca9b02 0%, #271a04 50%, #ca9b02 100%);
+  }
+  33.33% {
+    background-color: #0245ca;
+    background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+  }
+  50% {
+    background-color: #ca0207;
+    background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+  }
+  66.67% {
+    background-color: #ca9b02;
+    background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
+  }
+  83.33% {
+    background-color: #9802ca;
+    background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+  }
+  100% {
+    background-color: #0245ca;
+    background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+  }
+}/*# sourceMappingURL=index.css.map */
