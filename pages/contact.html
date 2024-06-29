@@ -4,9 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rammstein Contact</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-    
+    <div id="background-video" class="VideoBackground">
+        <video class="video" autoplay loop muted>
+          <source id="vid1" src="../backgroundvid/1amerika.mp4" type="video/mp4">
+          <source id="vid2" src="../backgroundvid/2ichwill.mp4" type="video/mp4">
+          <source id="vid3" src="../backgroundvid/3duhast.mp4" type="video/mp4">
+        </video>
+      </div>
+      
+      <div class="Content">
+        <header>
+          <nav>
+            <a href="musicpage.html">Music</a>
+            <a href="contact.html">Contact(Cr)</a>
+            <a href="../index.html">Main</a>
+            <a href="members.html">Members</a>
+          </nav>
+        </header>
+        <div class="logo"></div>
+        <h1>Contact Rammstein</h1>
+    <ul class="contact-info">
+        <li>
+            <a href="mailto:contact@rammstein.de">
+                <i class="fas fa-envelope"></i>Email Us
+            </a>
+        </li>
+        <li>
+            <a href="https://www.rammstein.de/en/imprint/" target="_blank">
+                <i class="fas fa-info-circle"></i>Imprint
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/Rammstein/" target="_blank">
+                <i class="fab fa-facebook"></i>Facebook
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/RSprachrohr" target="_blank">
+                <i class="fab fa-twitter"></i>Twitter
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/rammsteinofficial/" target="_blank">
+                <i class="fab fa-instagram"></i>Instagram
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/user/rammstein" target="_blank">
+                <i class="fab fa-youtube"></i>YouTube
+            </a>
+        </li>
+    </ul>
+        </div>
+        <div class="form-container">
+            <form>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+              </div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+    <script src="../membersbackground.js"></script>
 </body>
 </html>

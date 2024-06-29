@@ -45,6 +45,65 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.Content .photodiv1 {
+  background-image: url(../../img/photo1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.Content .member-section {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.Content .RichardKruspe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.Content .RichardKruspe .photodiv2 {
+  background-image: url(../../img/photo2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.Content .photodiv3 {
+  background-image: url(../../img/photo3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.Content .photodiv4 {
+  background-image: url(../../img/photo4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.Content .photodiv5 {
+  background-image: url(../../img/photo5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
+.Content .photodiv6 {
+  background-image: url(../../img/photo6.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 300px;
+}
 .Content header {
   margin-bottom: 30px;
   width: 600px;
@@ -65,63 +124,63 @@ body {
   background-repeat: no-repeat;
   width: 900px;
   height: 480px;
+  margin-bottom: 40px;
 }
-.Content main {
+
+.member-section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  margin-bottom: 2rem;
 }
-.Content main .Introduction {
+.member-section .member-photo {
+  height: 400px;
+  width: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.member-section .member-text {
+  width: calc(100% - 320px);
+  max-width: 900px;
+  padding-left: 20px;
+}
+
+.BigSection div {
+  height: 400px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 400px;
-  height: 200px;
-}
-.Content main .Members {
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-  width: 500px;
-  height: 300px;
+  flex-wrap: nowrap;
 }
-.Content main .Members p span {
-  display: block;
+.BigSection div div {
+  width: 300px;
+  height: 400px;
+  margin-right: 20px;
 }
-.Content main .Introduction {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
+.BigSection div .textdiv {
+  width: 800px;
 }
-.Content main .Formation {
-  width: 500px;
-  height: 300px;
-}
-.Content main .Breakthrough {
-  width: 500px;
-  height: 300px;
-}
-.Content h1 {
+
+h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-.Content h2 {
+
+h2 {
   font-size: 2rem;
   margin: 1rem;
 }
-.Content p {
+
+p {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
-.Content h1, .Content p, .Content h2 {
+
+h1, p, h2 {
   animation-name: colorChange;
   animation-duration: 30s;
   animation-iteration-count: infinite;
@@ -130,7 +189,8 @@ body {
           background-clip: text;
   color: transparent;
 }
-.Content a {
+
+a {
   animation-name: atagcolorChange;
   animation-duration: 30s;
   animation-iteration-count: infinite;
@@ -141,11 +201,7 @@ body {
 }
 
 @keyframes colorChange {
-  0% {
-    background-color: #ca0207;
-    background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
-  }
-  16.67% {
+  0%, 16.67%, 83.33% {
     background-color: #ca0207;
     background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
   }
@@ -161,19 +217,11 @@ body {
     background-color: #0245ca;
     background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
   }
-  83.33% {
-    background-color: #ca0207;
-    background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
-  }
   100% {
     background-color: #ca9b02;
     background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
   }
 }
-span {
-  display: block;
-}
-
 @keyframes atagcolorChange {
   0% {
     background-color: #9802ca;
@@ -215,11 +263,28 @@ span {
   }
   .Content header {
     width: 70%;
-    font-size: 1.8rem;
+    font-size: 1.25rem;
+  }
+  .Content .textdiv {
+    width: 600px;
+    margin: 1rem auto;
   }
   .Content .logo {
     width: 700px;
     height: 400px;
+  }
+  .Content h1 {
+    font-size: 2.5rem;
+  }
+  .Content h2 {
+    font-size: 1.75rem;
+  }
+  .Content p, .Content .contact-info a {
+    font-size: 1rem;
+  }
+  .Content .BigSection div {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -242,20 +307,45 @@ span {
     margin-right: 60px;
     flex: 0 0 auto;
   }
-  .Content a {
-    font-size: 1.5rem;
-  }
   .Content .logo {
     width: 500px;
     height: 300px;
   }
   .Content h1 {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .Content h2 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
-  .Content section {
+  .Content p, .Content .contact-info a {
+    font-size: 0.9rem;
+  }
+  .Content .member-section {
+    margin-top: 0px;
+  }
+  .Content .textdiv {
+    margin-top: 70px;
+    margin-bottom: 0px;
+  }
+  .Content .TillLindemann {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 1000px;
+  }
+  .Content .TillLindemann .textdiv {
+    width: 400px !important;
+  }
+  .Content .RichardKruspe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .Content div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -265,24 +355,15 @@ span {
 }
 @media (max-width: 480px) {
   .Content {
+    padding: 0.5rem;
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0px;
   }
-  .Content header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
-    width: 400px;
-    word-spacing: 10px;
-  }
-  .Content a {
+  .Content header {
     font-size: 1.1rem;
   }
   .Content .textdiv {
@@ -294,10 +375,10 @@ span {
     height: 200px;
   }
   .Content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .Content h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .Content p, .Content .contact-info a {
     font-size: 0.8rem;
@@ -305,13 +386,11 @@ span {
   .Content .member-section {
     width: 400px;
   }
-  .Content section {
+  .Content div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 250px !important;
-    width: 430px !important;
   }
-}/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=members.css.map */

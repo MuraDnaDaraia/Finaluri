@@ -9,8 +9,8 @@
         const stepForwardBtn = document.querySelector('.fa-step-forward');
         const forwardBtn = document.querySelector('.fa-redo-alt');
         const progressBar = document.querySelector('.progress-bar');
-        const currentTimeDisplay = document.querySelectorAll('.time')[0];
-        const durationTimeDisplay = document.querySelectorAll('.time')[1];
+       const currentTimeDisplay = document.querySelector('.current-time');
+const durationTimeDisplay = document.querySelector('.duration-time');
         const musicContainers = document.querySelectorAll('.music-container');
         const video = document.querySelector('video');
         const volumeSlider = document.querySelector('.volume-slider');
@@ -81,8 +81,14 @@
             const currentTime = videoPlayer.currentTime;
             const duration = videoPlayer.duration;
             progressBar.value = (currentTime / duration) * 100;
-            currentTimeDisplay.textContent = formatTime(currentTime);
-            durationTimeDisplay.textContent = ` / ${formatTime(duration)}`;
+        
+            if (currentTimeDisplay) {
+                currentTimeDisplay.textContent = formatTime(currentTime);
+            }
+        
+            if (durationTimeDisplay) {
+                durationTimeDisplay.textContent = ` / ${formatTime(duration)}`;
+            }
         });
     
         // Seek video

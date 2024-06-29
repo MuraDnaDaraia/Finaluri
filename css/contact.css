@@ -25,10 +25,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  object-fit: cover;
   -o-object-fit: cover;
-  -moz-object-fit: cover;
-  -webkit-object-fit: cover;
+     object-fit: cover;
 }
 
 .Content {
@@ -66,62 +64,52 @@ body {
   width: 900px;
   height: 480px;
 }
-.Content main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+.Content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
 }
-.Content main .Introduction {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 400px;
-  height: 200px;
-}
-.Content main .Members {
+.Content .contact-info {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  width: 500px;
-  height: 300px;
 }
-.Content main .Members p span {
-  display: block;
+.Content .contact-info li {
+  margin: 10px 0;
 }
-.Content main .Introduction {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 500px;
+.Content .contact-info li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: color 0.3s;
 }
-.Content main .Formation {
-  width: 500px;
-  height: 300px;
+.Content .contact-info li a:hover {
+  color: #ff0000;
 }
-.Content main .Breakthrough {
-  width: 500px;
-  height: 300px;
+.Content .contact-info li a i {
+  margin-right: 10px;
 }
-.Content h1 {
+
+h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-.Content h2 {
+
+h2 {
   font-size: 2rem;
   margin: 1rem;
 }
-.Content p {
+
+p {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
-.Content h1, .Content p, .Content h2 {
+
+h1, p, h2 {
   animation-name: colorChange;
   animation-duration: 30s;
   animation-iteration-count: infinite;
@@ -130,7 +118,8 @@ body {
           background-clip: text;
   color: transparent;
 }
-.Content a {
+
+a {
   animation-name: atagcolorChange;
   animation-duration: 30s;
   animation-iteration-count: infinite;
@@ -204,114 +193,94 @@ span {
     background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
   }
 }
-@media (max-width: 1024px) {
-  .Content {
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .Content header {
-    width: 70%;
-    font-size: 1.8rem;
-  }
-  .Content .logo {
-    width: 700px;
-    height: 400px;
-  }
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
 }
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type=email], input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
 @media (max-width: 768px) {
-  .Content {
+  body .VideoBackground .video {
+    width: 100vw;
+    height: 100vh;
+  }
+  body .Content {
     max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
-  .Content .textdiv {
-    width: 400px;
-  }
-  .Content .member-section {
-    width: 600px;
-  }
-  .Content .photodiv2 {
-    width: 300px;
-    margin-right: 60px;
-    flex: 0 0 auto;
-  }
-  .Content a {
-    font-size: 1.5rem;
-  }
-  .Content .logo {
-    width: 500px;
-    height: 300px;
-  }
-  .Content h1 {
-    font-size: 2.4rem;
-  }
-  .Content h2 {
-    font-size: 1.9rem;
-  }
-  .Content section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  body .Content .logo {
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 @media (max-width: 480px) {
-  .Content {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0px;
+  body .VideoBackground .video {
+    width: 100vw;
+    height: 100vh;
   }
-  .Content header nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    flex-wrap: wrap;
-    width: 400px;
-    word-spacing: 10px;
+  body .Content {
+    max-width: 400px;
+    padding: 1rem;
   }
-  .Content a {
-    font-size: 1.1rem;
+  body .Content header {
+    width: 100%;
+    font-size: 1.2rem;
   }
-  .Content .textdiv {
-    margin-top: 20px;
-    width: 380px;
-  }
-  .Content .logo {
-    width: 300px;
-    height: 200px;
-  }
-  .Content h1 {
+  body .Content h1 {
     font-size: 2rem;
   }
-  .Content h2 {
-    font-size: 1.5rem;
+  body .Content p {
+    font-size: 1rem;
   }
-  .Content p, .Content .contact-info a {
-    font-size: 0.8rem;
+  body .Content .contact-info li a {
+    font-size: 1.2em;
   }
-  .Content .member-section {
-    width: 400px;
+}
+@media (max-width: 1024px) {
+  .form-container {
+    width: 80%;
   }
-  .Content section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 250px !important;
-    width: 430px !important;
+}
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+@media (max-width: 480px) {
+  .form-container {
+    width: 100%;
+  }
+}/*# sourceMappingURL=contact.css.map */

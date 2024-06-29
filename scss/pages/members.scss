@@ -1,0 +1,367 @@
+@import '../_mixins';
+@import '../_variables';
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+  overflow-x: hidden;
+  background-color: transparent;
+}
+
+.VideoBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+
+  .video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include object-fit(cover);
+  }
+}
+
+.Content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  @include goFlex(column, center, center, wrap);
+
+  .photodiv1 {
+    background-image: url(../../img/photo1.jpg);
+    @include child-image();
+    height: 400px;
+    width: 300px;
+  }
+.member-section{
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+  .RichardKruspe {
+    @include goFlex(row, space-around, center, nowrap);
+    
+    .photodiv2 {
+      background-image: url(../../img/photo2.jpg);
+      @include child-image();
+      height: 400px;
+      width: 300px;
+    }
+  }
+    .photodiv3{
+      background-image: url(../../img/photo3.jpg);
+       @include child-image();
+      height: 400px;
+      width: 300px;
+    }
+     .photodiv4{
+      background-image: url(../../img/photo4.jpg);
+       @include child-image();
+      height: 400px;
+      width: 300px;
+    }
+     .photodiv5{
+      background-image: url(../../img/photo5.jpg);
+       @include child-image();
+      height: 400px;
+      width: 300px;
+    }
+     .photodiv6{
+      background-image: url(../../img/photo6.jpeg);
+       @include child-image();
+      height: 400px;
+      width: 300px;
+    }
+
+  header {
+    margin-bottom: 30px;
+    width: 600px;
+    font-size: 1.5rem;
+
+    nav {
+      @include goFlex(row, space-between, center, wrap);
+    }
+  }
+
+  .logo {
+    background-image: url(../../img/Rammstein-Logo.png);
+    background-color: wheat;
+    @include child-image(cover, center);
+    @include hwidth(900px, 480px);
+    margin-bottom: 40px;
+  }
+}
+.member-section {
+    @include goFlex(row, space-around, center, nowrap);
+    margin-bottom: 2rem;
+
+    .member-photo {
+      height: 400px;
+      width: 300px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .member-text {
+      width: calc(100% - 320px);
+      max-width: 900px;
+      padding-left: 20px;
+    }
+  }
+
+.BigSection {
+  div {
+    height: 400px;
+    @include goFlex(row, space-around, center, nowrap);
+
+    div {
+      width: 300px;
+      height: 400px;
+      margin-right: 20px;
+    }
+
+    .textdiv {
+      width: 800px;
+    }
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+h1, p, h2 {
+  animation-name: colorChange;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-clip: text;
+  color: transparent;
+}
+
+a {
+  animation-name: atagcolorChange;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes colorChange {
+  0%, 16.67%, 83.33% {
+    background-color: #ca0207;
+    background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+  }
+  33.33% {
+    background-color: #9802ca;
+    background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+  }
+  50% {
+    background-color: #ca9b02;
+    background-image: linear-gradient(90deg, #ca9b02 0%, #271a04 50%, #ca9b02 100%);
+  }
+  66.67% {
+    background-color: #0245ca;
+    background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+  }
+  100% {
+    background-color: #ca9b02;
+    background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
+  }
+}
+
+
+@keyframes atagcolorChange {
+0% {
+    background-color: #9802ca;
+    background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+}
+16.67% {
+    background-color: #ca9b02;
+    background-image: linear-gradient(90deg, #ca9b02 0%, #271a04 50%, #ca9b02 100%);
+}
+33.33% {
+    background-color: #0245ca;
+    background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+}
+50% {
+    background-color: #ca0207;
+  background-image: linear-gradient(90deg, #ca0207 0%, #270404 50%, #ca0207 100%);
+}
+66.67% {
+    background-color: #ca9b02;
+    background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
+}
+83.33% {
+    background-color: #9802ca;
+    background-image: linear-gradient(90deg, #9802ca 0%, #270425 50%, #a202ca 100%);
+}
+100% {
+    background-color: #0245ca;
+    background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
+}
+}
+// Media query for 1024px
+@media (max-width: 1024px) {
+  .Content {
+    max-width: 900px;
+    @include goFlex(column, space-around, center, wrap);
+
+    header {
+      width: 70%;
+      font-size: 1.25rem;
+    }
+    .textdiv{
+      width: 600px;
+      margin: 1rem auto;
+    }
+
+
+    .logo {
+      @include hwidth(700px, 400px);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    p, .contact-info a {
+      font-size: 1rem;
+    }
+    .BigSection{
+
+    
+    div{
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+  }
+}
+
+// Media query for 768px
+@media (max-width: 768px) {
+  .Content {
+    max-width: 600px;
+    @include goFlex(column, center, center, wrap);
+
+    .textdiv{
+      width: 400px;
+    }
+    .member-section{
+      width: 600px
+    }
+    .photodiv2 {
+      width: 300px;
+      margin-right: 60px;
+      flex: 0 0 auto; // Ensure .photodiv2 does not shrink
+    }
+
+    .logo {
+      @include hwidth(500px, 300px);
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p, .contact-info a {
+      font-size: 0.9rem;
+    }
+    .member-section{
+      margin-top: 0px;
+    }
+    .textdiv{
+      margin-top: 70px;
+      margin-bottom: 0px;
+    }
+    .TillLindemann{
+      @include goFlex(column, center, center);
+      height: 1000px;
+      .textdiv{
+        width: 400px !important;
+      }
+    }
+    .RichardKruspe{
+      @include goFlex(column, center, center); 
+       }
+    div {
+      @include goFlex(column, center, center, wrap);
+    }
+  }
+}
+
+// Media query for 480px
+@media (max-width: 480px) {
+  .Content {
+    padding: 0.5rem;
+    max-width: 100%;
+    @include goFlex(column, center, center, wrap);
+
+    header {
+      font-size: 1.1rem;
+
+
+    }
+.textdiv{
+  margin-top: 20px;
+  width: 380px;
+}
+    .logo {
+      @include hwidth(300px, 200px);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p, .contact-info a {
+      font-size: 0.8rem;
+    }
+.member-section{
+  width: 400px;
+}
+    div {
+      @include goFlex(column, center, center, wrap);
+    }
+  }
+}

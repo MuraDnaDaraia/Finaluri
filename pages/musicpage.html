@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,199 +10,198 @@
     <link rel="stylesheet" href="../css/music.css">
 </head>
 <body>
+    <header>
+       <nav>
+            <a href="">Music(Cr)</a>
+            <a href="contact.html">Contact</a>
+            <a href="../index.html">Main</a>
+            <a href="members.html">Members</a>
+        </nav>
+    </header>
     <div class="video-player">
         <video>
             <source src="video.mp4" type="video/mp4">
         </video>
+    </div>
+    <div class="music-controls">
+        <div class="progress-container">
+            <input type="range" class="progress-bar" value="0" max="100">
         </div>
-        <div class="music-controls">
-            <div class="progress-container">
-                <span id="time1" class="time">0:00</span>
-                <input type="range" class="progress-bar" value="0" max="100">
-                <span id="time2" class="time">/0:00</span>
-            </div>
-            <div class="buttons-container">
-                <button class="control-btn">
-                    <i class="fas fa-undo-alt"></i><span class="time-shift">10</span>
-                </button>
-                <button class="control-btn">
-                    <i class="fas fa-step-backward"></i>
-                </button>
-                <button class="control-btn play-pause-btn">
-                    <i class="fas fa-play"></i>
-                </button>
-                <button class="control-btn">
-                    <i class="fas fa-step-forward"></i>
-                </button>
-                <button class="control-btn">
-                    <i class="fas fa-redo-alt"></i><span class="time-shift">10</span>
-                </button>
-            </div>
-            <div class="volume-container">
-                <i class="fas fa-volume-up"></i>
-                <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1">
+        <div class="buttons-container">
+            <button class="control-btn">
+                <i class="fas fa-undo-alt"></i>
+            </button>
+            <button class="control-btn">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="control-btn play-pause-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn">
+                <i class="fas fa-step-forward"></i>
+            </button>
+            <button class="control-btn">
+                <i class="fas fa-redo-alt"></i>
+            </button>
+        </div>
+        <div class="volume-container">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" class="volume-slider" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <aside>
+        
+        <div class="Amerika music-container" data-video="../musicvids/Amerika.mp4">
+            <img src="../musicimgs/amerika.jpg" alt="Amerika">
+            <div class="content">
+                <h1>Amerika</h1>
+                <p>Rammstein</p>
             </div>
         </div>
-        <aside>
-            <div class="ahref">
-                <a href="">Music(Cr)</a>
-                <a href="contact.html">Contact</a>
-                <a href="../index.html">Main</a>
-                <a href="">Members</a>
+        
+        <div class="Angst music-container" data-video="../musicvids/Angst.mp4">
+            <img src="../musicimgs/angst.jpg" alt="Angst">
+            <div class="content">
+                <h1>Angst</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Duhast music-container" data-video="../musicvids/DuHast.mp4">
-                <img src="../musicimgs/duhast.jpg" alt="Music 1">
-                <div class="content">
-                    <h1>Du Hast</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Auslander music-container" data-video="../musicvids/Auslander.mp4">
+            <img src="../musicimgs/auslander.jpg" alt="Auslander">
+            <div class="content">
+                <h1>Ausländer</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="IchWill music-container" data-video="../musicvids/IchWill.mp4">
-                <img src="../musicimgs/ichwill.jpg" alt="Music 2">
-                <div class="content">
-                    <h1>Ich Will</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="BuckDich music-container" data-video="../musicvids/BuckDich.mp4">
+            <img src="../musicimgs/buck_dich.jpg" alt="Buck Dich">
+            <div class="content">
+                <h1>Bück Dich</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Amerika music-container" data-video="../musicvids/Amerika.mp4">
-                <img src="../musicimgs/amerika.jpg" alt="Music 3">
-                <div class="content">
-                    <h1>Amerika</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Deutschland music-container" data-video="../musicvids/Deutschland.mp4">
+            <img src="../musicimgs/deutschland.jpg" alt="Deutschland">
+            <div class="content">
+                <h1>Deutschland</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="MeinHerzBrennt music-container" data-video="../musicvids/MeinHerzBrennt.mp4">
-                <img src="../musicimgs/meinherzbrentt.jpg" alt="Music 4">
-                <div class="content">
-                    <h1>Mein Herz Brennt</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="DuHast music-container" data-video="../musicvids/DuHast.mp4">
+            <img src="../musicimgs/duhast.jpg" alt="Du Hast">
+            <div class="content">
+                <h1>Du Hast</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Deutschland music-container" data-video="../musicvids/Deutschland.mp4">
-                <img src="../musicimgs/deutschland.jpg" alt="Music 5">
-                <div class="content">
-                    <h1>Deutschland</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Engel music-container" data-video="../musicvids/Engel.mp4">
+            <img src="../musicimgs/engel.jpg" alt="Engel">
+            <div class="content">
+                <h1>Engel</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Angst music-container" data-video="../musicvids/Angst.mp4">
-                <img src="../musicimgs/angst.jpg" alt="Music 6">
-                <div class="content">
-                    <h1>Angst</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="FeurerFrei music-container" data-video="../musicvids/FeurerFrei.mp4">
+            <img src="../musicimgs/fuerer.jpg" alt="Feurer Frei">
+            <div class="content">
+                <h1>Feuer Frei!</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Auslander music-container" data-video="../musicvids/Auslander.mp4">
-                <img src="../musicimgs/auslander.jpg" alt="Music 7">
-                <div class="content">
-                    <h1>Auslander</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Halleluja music-container" data-video="../musicvids/Halleluja.mp4">
+            <img src="../musicimgs/halleluja.jpg" alt="Halleluja">
+            <div class="content">
+                <h1>Halleluja</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="BuckDich music-container" data-video="../musicvids/BuckDich.mp4">
-                <img src="../musicimgs/buck dich.jpg" alt="Music 8">
-                <div class="content">
-                    <h1>Buck Dich</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="IchWill music-container" data-video="../musicvids/IchWill.mp4">
+            <img src="../musicimgs/ichwill.jpg" alt="Ich Will">
+            <div class="content">
+                <h1>Ich Will</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Engel music-container" data-video="../musicvids/Engel.mp4">
-                <img src="../musicimgs/engel.jpg" alt="Music 9">
-                <div class="content">
-                    <h1>Engel</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Links music-container" data-video="../musicvids/Links.mp4">
+            <img src="../musicimgs/links.jpg" alt="Links">
+            <div class="content">
+                <h1>Links 2-3-4</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="FeuerFrei music-container" data-video="../musicvids/FeuerFrei.mp4">
-                <img src="../musicimgs/fuerer.jpg" alt="Music 10">
-                <div class="content">
-                    <h1>Feuer Frei</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="MeinHerzBrennt music-container" data-video="../musicvids/MeinHerzBrennt.mp4">
+            <img src="../musicimgs/meinherzbrentt.jpg" alt="Mein Herz Brennt">
+            <div class="content">
+                <h1>Mein Herz Brennt</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Halleluja music-container" data-video="../musicvids/Halleluja.mp4">
-                <img src="../musicimgs/halleluja.jpg" alt="Music 11">
-                <div class="content">
-                    <h1>Halleluja</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="MeinTeil music-container" data-video="../musicvids/MeinTeil.mp4">
+            <img src="../musicimgs/meinteil.jpg" alt="Mein Teil">
+            <div class="content">
+                <h1>Mein Teil</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Links music-container" data-video="../musicvids/Links.mp4">
-                <img src="../musicimgs/links.jpg" alt="Music 12">
-                <div class="content">
-                    <h1>Links 2 3 4</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        <div class="Mutter music-container" data-video="../musicvids/Mutter.mp4">
+            <img src="../musicimgs/mutter.jpg" alt="Mutter">
+            <div class="content">
+                <h1>Mutter</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="MeinTeil music-container" data-video="../musicvids/MeinTeil.mp4">
-                <img src="../musicimgs/meinteil.jpg" alt="Music 13">
-                <div class="content">
-                    <h1>Mein Teil</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Radio music-container" data-video="../musicvids/Radio.mp4">
+            <img src="../musicimgs/radio.jpg" alt="Radio">
+            <div class="content">
+                <h1>Radio</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Mutter music-container" data-video="../musicvids/Mutter.mp4">
-                <img src="../musicimgs/mutter.jpg" alt="Music 14">
-                <div class="content">
-                    <h1>Mutter</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Rammstein music-container" data-video="../musicvids/Rammstein.mp4">
+            <img src="../musicimgs/rammstein.jpg" alt="Rammstein">
+            <div class="content">
+                <h1>Rammstein</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Radio music-container" data-video="../musicvids/Radio.mp4">
-                <img src="../musicimgs/radio.jpg" alt="Music 15">
-                <div class="content">
-                    <h1>Radio</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Reise music-container" data-video="../musicvids/Reise.mp4">
+            <img src="../musicimgs/reise.jpg" alt="Reise, Reise">
+            <div class="content">
+                <h1>Reise, Reise</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Rammstein music-container" data-video="../musicvids/Rammstein.mp4">
-                <img src="../musicimgs/rammstein.jpg" alt="Music 16">
-                <div class="content">
-                    <h1>Rammstein</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Rosenrot music-container" data-video="../musicvids/Rosenrot.mp4">
+            <img src="../musicimgs/rosenrot.jpg" alt="Rosenrot">
+            <div class="content">
+                <h1>Rosenrot</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Reise music-container" data-video="../musicvids/Reise.mp4">
-                <img src="../musicimgs/reise.jpg" alt="Music 17">
-                <div class="content">
-                    <h1>Reise, Reise!</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
+        </div>
+        
+        <div class="Sonne music-container" data-video="../musicvids/Sonne.mp4">
+            <img src="../musicimgs/sonne.jpg" alt="Sonne">
+            <div class="content">
+                <h1>Sonne</h1>
+                <p>Rammstein</p>
             </div>
-            <div class="Rosenrot music-container" data-video="../musicvids/Rosenrot.mp4">
-                <img src="../musicimgs/rosenrot.jpg" alt="Music 18">
-                <div class="content">
-                    <h1>Rosenrot</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
-            </div>
-            <div class="Sonne music-container" data-video="../musicvids/Sonne.mp4">
-                <img src="../musicimgs/sonne.jpg" alt="Music 19">
-                <div class="content">
-                    <h1>Sonne</h1>
-                    <p>Rammstein</p>
-                </div>
-                <span>Additional Info</span>
-            </div>
-        </aside>
-        <script src="../Music.js"></script>
+        </div>
+    </aside>
+    <script src="../music.js"></script>
 </body>
 </html>

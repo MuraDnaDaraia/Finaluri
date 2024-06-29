@@ -1,5 +1,5 @@
-@import '../mixins';
-@import '../_variables';
+@import 'scss/_mixins';
+@import 'scss/_variables';
 
 body {
     font-family: Arial, sans-serif;
@@ -28,6 +28,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        @include object-fit(cover);
   }
 }
 
@@ -70,6 +71,12 @@ body {
               display: block;
             }
           }
+        }
+        .Introduction{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 500px;
         }
         .Formation{
           @include hwidth(500px, 300px);
@@ -172,4 +179,105 @@ background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
         background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
     }
   }
+  @media (max-width: 1024px) {
+    .Content {
+      max-width: 900px;
+      @include goFlex(column, space-around, center, wrap);
   
+      header {
+        width: 70%;
+        font-size: 1.8rem;
+      }
+      
+      .logo {
+        @include hwidth(700px, 400px);
+      }
+  
+     
+    }
+  }
+  
+  // Media query for 768px
+  @media (max-width: 768px) {
+    .Content {
+      max-width: 600px;
+      @include goFlex(column, center, center, wrap);
+  
+      .textdiv{
+        width: 400px;
+      }
+      .member-section{
+        width: 600px
+      }
+      .photodiv2 {
+        width: 300px;
+        margin-right: 60px;
+        flex: 0 0 auto; // Ensure .photodiv2 does not shrink
+      }
+      a{
+        font-size: 1.5rem;
+      }
+      .logo {
+        @include hwidth(500px, 300px);
+      }
+  
+      h1 {
+        font-size: 2.4rem;
+      }
+  
+      h2 {
+        font-size: 1.9rem;
+      }
+  
+
+      section {
+        @include goFlex(column, center, center, wrap);
+      }
+    }
+  }
+  
+  // Media query for 480px
+  @media (max-width: 480px) {
+    .Content {
+      max-width: 100%;
+      @include goFlex(column, center, center, wrap);
+      padding: 0px;
+      header {
+        nav{
+        @include goFlex(row, space-around);
+        width: 400px;
+        word-spacing: 10px;
+        }
+      }
+      a{
+        font-size: 1.1rem;
+      }
+  .textdiv{
+    margin-top: 20px;
+    width: 380px;
+  }
+      .logo {
+        @include hwidth(300px, 200px);
+      }
+  
+      h1 {
+        font-size: 2rem;
+      }
+  
+      h2 {
+        font-size: 1.5rem;
+      }
+  
+      p, .contact-info a {
+        font-size: 0.8rem;
+      }
+  .member-section{
+    width: 400px;
+  }
+      section {
+        @include goFlex(column, center, center, wrap);
+       height: 250px !important;
+       width: 430px !important;
+      }
+    }
+  }
