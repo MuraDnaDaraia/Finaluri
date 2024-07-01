@@ -266,7 +266,7 @@ a {
     font-size: 1.25rem;
   }
   .Content .textdiv {
-    width: 600px;
+    width: 600px !important;
     margin: 1rem auto;
   }
   .Content .logo {
@@ -327,7 +327,7 @@ a {
     margin-top: 70px;
     margin-bottom: 0px;
   }
-  .Content .TillLindemann {
+  .Content .member-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,7 +335,7 @@ a {
     flex-wrap: wrap;
     height: 1000px;
   }
-  .Content .TillLindemann .textdiv {
+  .Content .member-section .textdiv {
     width: 400px !important;
   }
   .Content .RichardKruspe {

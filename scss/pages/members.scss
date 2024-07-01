@@ -228,7 +228,6 @@ a {
     background-image: linear-gradient(90deg, #0245ca 0%, #686c92 50%, #0036d6 100%);
 }
 }
-// Media query for 1024px
 @media (max-width: 1024px) {
   .Content {
     max-width: 900px;
@@ -239,7 +238,7 @@ a {
       font-size: 1.25rem;
     }
     .textdiv{
-      width: 600px;
+      width: 600px !important;
       margin: 1rem auto;
     }
 
@@ -270,7 +269,6 @@ a {
   }
 }
 
-// Media query for 768px
 @media (max-width: 768px) {
   .Content {
     max-width: 600px;
@@ -285,7 +283,7 @@ a {
     .photodiv2 {
       width: 300px;
       margin-right: 60px;
-      flex: 0 0 auto; // Ensure .photodiv2 does not shrink
+      flex: 0 0 auto; 
     }
 
     .logo {
@@ -310,7 +308,7 @@ a {
       margin-top: 70px;
       margin-bottom: 0px;
     }
-    .TillLindemann{
+    .member-section{
       @include goFlex(column, center, center);
       height: 1000px;
       .textdiv{
@@ -326,7 +324,6 @@ a {
   }
 }
 
-// Media query for 480px
 @media (max-width: 480px) {
   .Content {
     padding: 0.5rem;

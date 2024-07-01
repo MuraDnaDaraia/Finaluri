@@ -57,6 +57,16 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.Content header nav .tbc {
+  opacity: 1;
+  display: flex;
+  background-position: center;
+  text-decoration: none;
+  background-size: contain !important;
+  background-image: url(../../img/tbc.png) !important;
+  height: 48px !important;
+  width: 48px !important;
+}
 .Content .logo {
   background-image: url(../../img/Rammstein-Logo.png);
   background-color: wheat;

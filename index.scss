@@ -49,6 +49,16 @@ body {
         font-size: 1.5rem;
         nav{
             @include goFlex(row, space-between, center, wrap);
+            .tbc{
+              opacity: 1;
+              display: flex;
+              background-position: center;
+              text-decoration: none;
+              background-size: contain !important;
+              background-image: url(../../img/tbc.png) !important;
+              height: 48px !important;
+              width: 48px !important;
+            }
         }
     }
       .logo{
@@ -197,7 +207,7 @@ background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
     }
   }
   
-  // Media query for 768px
+ 
   @media (max-width: 768px) {
     .Content {
       max-width: 600px;
@@ -212,7 +222,7 @@ background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
       .photodiv2 {
         width: 300px;
         margin-right: 60px;
-        flex: 0 0 auto; // Ensure .photodiv2 does not shrink
+        flex: 0 0 auto; 
       }
       a{
         font-size: 1.5rem;
@@ -236,7 +246,7 @@ background-image: linear-gradient(90deg, #045c4f 0%, #56847b 50%, #045c4f 100%);
     }
   }
   
-  // Media query for 480px
+
   @media (max-width: 480px) {
     .Content {
       max-width: 100%;

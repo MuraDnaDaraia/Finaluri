@@ -141,8 +141,8 @@ body {
         margin-left: auto;
       }
       &.active {
-        border: 2px solid #ff0000; /* Red border to highlight the active video */
-        box-shadow: 0 0 10px #ff0000; /* Red glow effect */
+        border: 2px solid #ff0000; 
+        box-shadow: 0 0 10px #ff0000;
       }
     }
   
@@ -415,7 +415,7 @@ body {
     }
   
     aside {
-      width: 93%;
+      width: 89%;
       position: absolute;
       height: auto;
       margin: 10px 0;
